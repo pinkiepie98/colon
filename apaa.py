@@ -7,7 +7,7 @@ with st.popover("Menu"):
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://i.pinimg.com/736x/dc/9e/dd/dc9edd57e6491254cdc755d23a9c563d.jpg");
+        background-image: url("https://i.pinimg.com/736x/3f/3f/34/3f3f34c2f544763cc90f772ce536dcb4.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -20,8 +20,11 @@ st.markdown("""
         margin-top: 10%;
     }
     .title {
-        color: #4CAF50;
+        color: white;
         text-align: center;
+   }     
+        h3 {
+    color: white;
     }
     </style>
 """, unsafe_allow_html=True)
