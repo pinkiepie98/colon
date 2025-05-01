@@ -65,14 +65,7 @@ elif menu == "Kalkulator Total Plate Count":
         st.write(f"✅ TPC dari cawan 1: **{tpc1:.4f} CFU/mL**")
         st.write(f"✅ TPC dari cawan 2: **{tpc2:.4f} CFU/mL**")
         st.success(f"🔢 Rata-rata Total Plate Count (TPC): **{rata_rata_tpc:.4f} CFU/mL**")
-        rain(
-       emoji="🦠",
-       font_size=54,
-       falling_speed=5,
-       animation_length="infinite",
-   )
-   
-
+        st.balloons()
         st.info("Bakteri udah dihitung, sekarang waktunya kamu santai dulu! ☕🦠")
         
     st.markdown('</div>', unsafe_allow_html=True)
