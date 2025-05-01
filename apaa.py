@@ -41,12 +41,12 @@ elif menu == "Kalkulator Total Plate Count":
 
     st.write("Masukkan data pengamatan laboratorium:")
 
-    st.subheader("🔬 Data Cawan 1")
+    st.subheader("🔬 Data Pengenceran 1")
     koloni_1a = st.number_input("Jumlah koloni cawan 1 - Duplo A:", min_value=0, step=1, key="koloni_1a")
     koloni_1b = st.number_input("Jumlah koloni cawan 1 - Duplo B:", min_value=0, step=1, key="koloni_1b")
     pengenceran_1 = st.number_input("Faktor pengenceran cawan 1 (misal 10⁻³ → isi 1000):", min_value=1, step=1, key="pengenceran_1")
 
-    st.subheader("🔬 Data Cawan 2")
+    st.subheader("🔬 Data Pengenceran 2")
     koloni_2a = st.number_input("Jumlah koloni cawan 2 - Duplo A:", min_value=0, step=1, key="koloni_2a")
     koloni_2b = st.number_input("Jumlah koloni cawan 2 - Duplo B:", min_value=0, step=1, key="koloni_2b")
     pengenceran_2 = st.number_input("Faktor pengenceran cawan 2 (misal 10⁻³ → isi 1000):", min_value=1, step=1, key="pengenceran_2")
