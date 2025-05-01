@@ -7,7 +7,7 @@ with st.popover("Menu"):
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://i.pinimg.com/736x/9d/4a/8e/9d4a8e3c2a9f2560f5febd654b189910.jpg");
+        background-image: url("https://www.canva.com/design/DAGmALPtXik/sT93aKLcgWH9q4u1IYTq-w/edit?utm_content=DAGmALPtXik&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
