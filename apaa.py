@@ -7,7 +7,7 @@ with st.popover("Menu"):
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://i.pinimg.com/736x/3f/3f/34/3f3f34c2f544763cc90f772ce536dcb4.jpg");
+        background-image: url("https://i.pinimg.com/736x/73/e6/3f/73e63f3961ed68e42e4628c8155ecd38.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -20,14 +20,14 @@ st.markdown("""
         margin-top: 20%;
     }
     .title {
-        color: white;
+        color: Black;
         text-align: center;
     }
     h3 {
-        color: white;
+        color: Black;
     }
    .custom-text {
-    color: white;
+    color: Black;
     font-size: 16px;
     font-family: 'Calibri', 'Segoe UI', sans-serif;
 }
@@ -39,7 +39,7 @@ st.markdown("""
 if menu == "Home":
     st.markdown('<div class="main">', unsafe_allow_html=True)
     st.markdown('<h1 class="title">🧫 Selamat Datang di Aplikasi TPC</h1>', unsafe_allow_html=True)
-    st.write("Aplikasi ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Silahkan menu di sebelah kiri untuk mulai.")
+    st.write("Aplikasi ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di sebelah kiri untuk mulai.")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Halaman: Kalkulator Total Plate Count
