@@ -7,7 +7,7 @@ with st.popover("Menu"):
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://i.pinimg.com/originals/6b/35/3a/6b353a431ea7487e8e77d8c6b4b7a1d0.jpg");
+        background-image: url("https://i.pinimg.com/736x/dc/9e/dd/dc9edd57e6491254cdc755d23a9c563d.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -25,6 +25,8 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+
 
 # Halaman: Home
 if menu == "Home":
@@ -79,4 +81,3 @@ elif menu == "Tentang Kami":
     """)
     st.image("LPK.jpg", caption="KELOMPOK 6")
     st.markdown('</div>', unsafe_allow_html=True)
-
