@@ -27,6 +27,9 @@ st.markdown(f"""
     </style>
 """, unsafe_allow_html=True)
 
+with st.popover("📋 Buka Menu"):
+    menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
+
 # Halaman: Home
 if menu == "Home":
     st.markdown('<div class="main">', unsafe_allow_html=True)
