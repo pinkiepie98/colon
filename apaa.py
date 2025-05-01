@@ -87,8 +87,8 @@ elif menu == "Tentang Kami":
     # Menambahkan gambar dengan HTML agar bisa diatur gaya
     st.markdown('''
         <div style="text-align: center;">
-            <img src="https://i.pinimg.com/736x/2e/49/ba/2e49baed7b89068c1c1747e623b5e916.jpg" alt=" **This Is Us!!** " style="width: 60%; border-radius: 15px; margin-top: 20px;">
-            <p class="custom-text"><strong> **This Is Us!!** </strong></p>
+            <img src="https://i.pinimg.com/736x/2e/49/ba/2e49baed7b89068c1c1747e623b5e916.jpg" alt="This Is Us!!" style="width: 60%; border-radius: 15px; margin-top: 20px;">
+            <p class="custom-text"><strong>This Is Us!!</strong></p>
         </div>
     ''', unsafe_allow_html=True)
 
