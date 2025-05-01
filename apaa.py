@@ -22,13 +22,17 @@ st.markdown("""
     .title {
         color: white;
         text-align: center;
-   }     
-        h3 {
-    color: white;
+    }
+    h3 {
+        color: white;
+    }
+    .custom-text {
+        color: white;
+        font-size: 16px;
+        font-family: 'Calibri', sans-serif;
     }
     </style>
 """, unsafe_allow_html=True)
-
 
 
 # Halaman: Home
@@ -77,10 +81,15 @@ elif menu == "Kalkulator Total Plate Count":
 elif menu == "Tentang Kami":
     st.markdown('<div class="main">', unsafe_allow_html=True)
     st.markdown('<h1 class="title">👨‍🔬 Tentang Kami</h1>', unsafe_allow_html=True)
-    st.write("""
-        Aplikasi ini dibuat untuk menghitung Total Plate Count (TPC) secara cepat dan akurat.
-        \n💻 Dibuat menggunakan Python & Streamlit.
-        \n📧 Kontak: lab@example.com
-    """)
-    st.image("LPK.jpg", caption="KELOMPOK 6")
+    st.markdown('<p class="custom-text">Aplikasi ini dibuat untuk menghitung Total Plate Count (TPC) secara cepat dan akurat.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="custom-text">💻 Dibuat menggunakan Python & Streamlit.</p>', unsafe_allow_html=True)
+
+    # Menambahkan gambar dengan HTML agar bisa diatur gaya
+    st.markdown('''
+        <div style="text-align: center;">
+            <img src="https://i.pinimg.com/736x/2e/49/ba/2e49baed7b89068c1c1747e623b5e916.jpg" alt="KELOMPOK 6" style="width: 60%; border-radius: 15px; margin-top: 20px;">
+            <p class="custom-text"><strong>KELOMPOK 6</strong></p>
+        </div>
+    ''', unsafe_allow_html=True)
+
     st.markdown('</div>', unsafe_allow_html=True)
