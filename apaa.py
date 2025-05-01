@@ -4,26 +4,25 @@ with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
 # Tambahkan background image & style
-st.markdown(f"""
+st.markdown("""
     <style>
-    body {{
+    .stApp {
         background-image: url("https://i.pinimg.com/736x/9d/4a/8e/9d4a8e3c2a9f2560f5febd654b189910.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        height: 100vh;
-        margin: 0;
-    }}
-    .main {{
-        background-color: rgba(255, 255, 255, 0.8);
+        background-position: center;
+    }
+    .main {
+        background-color: rgba(255, 255, 255, 0.85);
         padding: 20px;
         border-radius: 10px;
         margin-top: 10%;
-    }}
-    .title {{
+    }
+    .title {
         color: #4CAF50;
         text-align: center;
-    }}
+    }
     </style>
 """, unsafe_allow_html=True)
 
