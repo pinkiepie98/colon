@@ -75,5 +75,7 @@ elif menu == "Tentang Kami":
     st.write("""
         Aplikasi ini dibuat untuk menghitung Total Plate Count (TPC) secara cepat dan akurat.
         \n💻 Dibuat menggunakan Python & Streamlit.
-        
+        \n📧 Kontak: lab@example.com
+    """)
     st.markdown('</div>', unsafe_allow_html=True)
+
