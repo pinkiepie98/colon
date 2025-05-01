@@ -17,7 +17,7 @@ st.markdown("""
         background-color: rgba(255, 255, 255, 0.85);
         padding: 0px;
         border-radius: 10px;
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .title {
         color: Black;
