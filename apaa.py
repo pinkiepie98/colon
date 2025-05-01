@@ -1,6 +1,6 @@
 import streamlit as st
 
-with st.popover("📋 Buka Menu"):
+with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
 # Tambahkan background image & style
