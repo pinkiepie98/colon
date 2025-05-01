@@ -1,7 +1,7 @@
 import streamlit as st
 
-# Sidebar menu
-menu = st.sidebar.radio("Pilih Menu", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
+with st.popover("📋 Buka Menu"):
+    menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
 # Tambahkan background image & style
 st.markdown(f"""
@@ -26,9 +26,6 @@ st.markdown(f"""
     }}
     </style>
 """, unsafe_allow_html=True)
-
-with st.popover("📋 Buka Menu"):
-    menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
 # Halaman: Home
 if menu == "Home":
