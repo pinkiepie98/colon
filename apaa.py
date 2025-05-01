@@ -74,7 +74,6 @@ elif menu == "Tentang Kami":
     st.markdown('<h1 class="title">👨‍🔬 Tentang Kami</h1>', unsafe_allow_html=True)
     st.write("""
         Aplikasi ini dibuat untuk menghitung Total Plate Count (TPC) secara cepat dan akurat.
-st.image("https://drive.google.com/file/d/1ARDDUd_MQ0IHiY-FRTvctXgF99qKLsNZ/view?usp=drive_link", caption="KELOMPOK 6", width=150)  
         \n💻 Dibuat menggunakan Python & Streamlit.
         
     st.markdown('</div>', unsafe_allow_html=True)
