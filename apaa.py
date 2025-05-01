@@ -77,6 +77,7 @@ elif menu == "Tentang Kami":
         \n💻 Dibuat menggunakan Python & Streamlit.
         \n📧 Kontak: lab@example.com
     """)
+import streamlit as st
     st.image("LPK.jpg", caption="KELOMPOK 6", width=150)
     st.markdown('</div>', unsafe_allow_html=True)
 
