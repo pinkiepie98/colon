@@ -81,7 +81,7 @@ elif menu == "Kalkulator Total Plate Count":
 elif menu == "Tentang Kami":
     st.markdown('<div class="main">', unsafe_allow_html=True)
     st.markdown('<h1 class="title">👨‍🔬 Tentang Kami</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="custom-text">Kami dari kelompok 6 kelas 1E2 Penjaminan Mutu Indudtri Pangan membuat aplikasi ini untuk menghitung Total Plate Count (TPC) secara cepat dan akurat. Kami sangat terbuka terhadap masukan, kritik, maupun saran demi peningkatan dan pengembangan web ini ke depannya. Jangan ragu untuk menghubungi kami!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="custom-text">Kami dari kelompok 6 kelas 1E2 Penjaminan Mutu Industri Pangan membuat aplikasi ini untuk menghitung Total Plate Count (TPC) secara cepat dan akurat. Kami sangat terbuka terhadap masukan, kritik, maupun saran demi peningkatan dan pengembangan web ini ke depannya. Jangan ragu untuk menghubungi kami!</p>', unsafe_allow_html=True)
     st.markdown('<p class="custom-text">💻 Dibuat menggunakan Python & Streamlit.</p>', unsafe_allow_html=True)
 
     # Menambahkan gambar dengan HTML agar bisa diatur gaya
