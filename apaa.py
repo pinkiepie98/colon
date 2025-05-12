@@ -62,8 +62,8 @@ if menu == "Home":
     st.markdown(f"""
         <div style="
             position: fixed;
+            bottom: 20px;
             left: 20px;
-            right: 20px;
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 10px;
