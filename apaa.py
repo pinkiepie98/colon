@@ -12,7 +12,10 @@ fakta_seru = [
     "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
     "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
     "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
-    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
+    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni.",
+    "🧪 TPC membantu mendeteksi kontaminasi bakteri dalam produksi makanan.",
+    "🧊 Pendinginan yang baik memperlambat pertumbuhan mikroorganisme."
+    
 ]
 fakta_pilihan = random.choice(fakta_seru)
 
