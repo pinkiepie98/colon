@@ -38,7 +38,7 @@ st.markdown("""
 # Halaman: Home
 if menu == "Home":
     st.markdown('<div class="main">', unsafe_allow_html=True)
-    st.markdown('<h1 class="title">🧫 Welcome To Calculator TPC</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="title">🧫 Welcome To Calculator TPC🦠</h1>', unsafe_allow_html=True)
     st.write("Website ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di atas untuk mulai.")
     st.markdown('</div>', unsafe_allow_html=True)
 
