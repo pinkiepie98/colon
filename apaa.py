@@ -12,13 +12,11 @@ fakta_seru = [
     "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
     "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
     "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
-    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni.",
-    "🧪 TPC membantu mendeteksi kontaminasi bakteri dalam produksi makanan.",
-    "🧊 Pendinginan yang baik memperlambat pertumbuhan mikroorganisme."
-    
+    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
 ]
 fakta_pilihan = random.choice(fakta_seru)
 
+# Menu
 with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
@@ -45,10 +43,10 @@ st.markdown("""
     h3 {
         color: Black;
     }
-   .custom-text {
-    color: Black;
-    font-size: 16px;
-    font-family: 'Calibri', 'Segoe UI', sans-serif;
+    .custom-text {
+        color: Black;
+        font-size: 16px;
+        font-family: 'Calibri', 'Segoe UI', sans-serif;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -60,11 +58,12 @@ if menu == "Home":
     st.write("Website ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di atas untuk mulai.")
     st.markdown('</div>', unsafe_allow_html=True)
 
-st.markdown(f"""
+    # Tampilkan fakta seru di pojok kanan bawah
+    st.markdown(f"""
         <div style="
             position: fixed;
-            bottom: 20px;
             left: 20px;
+            right: 20px;
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 10px;
@@ -110,7 +109,7 @@ elif menu == "Kalkulator Total Plate Count":
         st.write(f"✅ TPC dari cawan 2: **{tpc2:.4f} CFU/mL**")
         st.success(f"🔢 Rata-rata Total Plate Count (TPC): **{rata_rata_tpc:.4f} CFU/mL**")
         st.info("Bakteri udah dihitung, sekarang waktunya kamu santai dulu! ☕🦠")
-        
+
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Halaman: Tentang Kami
@@ -120,7 +119,6 @@ elif menu == "Tentang Kami":
     st.markdown('<p class="custom-text">Kami dari kelompok 6 kelas 1E2 Penjaminan Mutu Industri Pangan membuat website ini untuk menghitung Total Plate Count (TPC) secara cepat dan akurat. Kami sangat terbuka terhadap masukan, kritik, maupun saran demi peningkatan dan pengembangan web ini ke depannya. Jangan ragu untuk menghubungi kami!</p>', unsafe_allow_html=True)
     st.markdown('<p class="custom-text">💻 Dibuat menggunakan Python & Streamlit.</p>', unsafe_allow_html=True)
 
-    # Menambahkan gambar dengan HTML agar bisa diatur gaya
     st.markdown('''
         <div style="text-align: center;">
             <img src="https://i.pinimg.com/736x/2e/49/ba/2e49baed7b89068c1c1747e623b5e916.jpg" alt="This Is Us!!" style="width: 60%; border-radius: 15px; margin-top: 20px;">
