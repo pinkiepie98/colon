@@ -18,6 +18,7 @@ fakta_seru = [
     
 ]
 fakta_pilihan = random.choice(fakta_seru)
+
 with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
@@ -76,7 +77,6 @@ st.markdown(f"""
             {fakta_pilihan}
         </div>
     """, unsafe_allow_html=True)
-
 
 # Halaman: Kalkulator Total Plate Count
 elif menu == "Kalkulator Total Plate Count":
