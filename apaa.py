@@ -42,7 +42,7 @@ if menu == "Home":
     st.markdown('<h1 class="title">🧫 Welcome To Calculator TPC 🦠</h1>', unsafe_allow_html=True)
     st.write("Website ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di atas untuk mulai.")
     st.markdown('</div>', unsafe_allow_html=True)
-    🧠 <strong>Fakta Seru:</strong><br>
+    
     # Fakta-fakta seru gabungan
 fakta_seru = [
     "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
