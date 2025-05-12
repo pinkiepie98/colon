@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 
-st.set_page_config(layout="wide")
+
 # Fakta-fakta seru gabungan
 fakta_seru = [
     "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
