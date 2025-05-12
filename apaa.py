@@ -65,23 +65,42 @@ fakta_seru = [
     "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
 ]
 
-fakta_string = str(fakta_seru).replace("'", '"')  # JS array format
-st.markdown(f"""
-<div id="fakta-seru-box">Fakta seru dimuat...</div>
-<script>
-const faktaList = {fakta_string};
-let i = 0;
-function showNextFakta() {{
-    const box = document.getElementById("fakta-seru-box");
-    if (box) {{
-        box.innerText = faktaList[i];
-        i = (i + 1) % faktaList.length;
-    }}
-}}
-setInterval(showNextFakta, 5000);  // Ganti tiap 5 detik
-showNextFakta();  // Tampilkan langsung
-</script>
-""", unsafe_allow_html=True)
+fakta_string = str(fakta_seru).replace("'", '"')  # Untuk format array JS
+
+    st.markdown(f"""
+        <style>
+        #fakta-seru-box {{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.85);
+            padding: 12px 18px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+            font-size: 14px;
+            font-family: 'Segoe UI', sans-serif;
+            color: #000;
+            z-index: 9999;
+            width: 250px;
+            text-align: center;
+        }}
+        </style>
+
+        <div id="fakta-seru-box">Memuat fakta seru...</div>
+        <script>
+        const faktaList = {fakta_string};
+        let i = 0;
+        function showNextFakta() {{
+            const box = document.getElementById("fakta-seru-box");
+            if (box) {{
+                box.innerText = faktaList[i];
+                i = (i + 1) % faktaList.length;
+            }}
+        }}
+        setInterval(showNextFakta, 5000);
+        showNextFakta();
+        </script>
+    """, unsafe_allow_html=True)
 
 # Halaman: Home
 if menu == "Home":
