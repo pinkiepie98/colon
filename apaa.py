@@ -1,24 +1,6 @@
 import streamlit as st
 import random
 
-
-# Fakta-fakta seru gabungan
-fakta_seru = [
-    "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
-    "🔬 TPC digunakan untuk mengukur keamanan pangan.",
-    "🦠 Beberapa bakteri bisa bertahan di lingkungan ekstrem.",
-    "💡 Pasteurisasi membantu menurunkan jumlah mikroba berbahaya.",
-    "🍽️ Mencuci tangan yang benar bisa mencegah penyebaran bakteri berbahaya.",
-    "📊 TPC adalah metode penting dalam pengujian kualitas makanan.",
-    "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
-    "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
-    "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
-    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
-]
-
-# Pilih satu fakta secara acak
-fakta_pilihan = random.choice(fakta_seru)
-
 with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
 
@@ -60,6 +42,25 @@ if menu == "Home":
     st.markdown('<h1 class="title">🧫 Welcome To Calculator TPC 🦠</h1>', unsafe_allow_html=True)
     st.write("Website ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di atas untuk mulai.")
     st.markdown('</div>', unsafe_allow_html=True)
+    🧠 <strong>Fakta Seru:</strong><br>
+    # Fakta-fakta seru gabungan
+fakta_seru = [
+    "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
+    "🔬 TPC digunakan untuk mengukur keamanan pangan.",
+    "🦠 Beberapa bakteri bisa bertahan di lingkungan ekstrem.",
+    "💡 Pasteurisasi membantu menurunkan jumlah mikroba berbahaya.",
+    "🍽️ Mencuci tangan yang benar bisa mencegah penyebaran bakteri berbahaya.",
+    "📊 TPC adalah metode penting dalam pengujian kualitas makanan.",
+    "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
+    "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
+    "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
+    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
+]
+
+# Pilih satu fakta secara acak
+fakta_pilihan = random.choice(fakta_seru)
+</div>
+    """, unsafe_allow_html=True)
 
 # Halaman: Kalkulator Total Plate Count
 elif menu == "Kalkulator Total Plate Count":
