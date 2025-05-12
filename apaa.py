@@ -76,7 +76,8 @@ st.markdown(f"""
             {fakta_pilihan}
         </div>
     """, unsafe_allow_html=True)
-  
+
+
 # Halaman: Kalkulator Total Plate Count
 elif menu == "Kalkulator Total Plate Count":
     st.markdown('<div class="main">', unsafe_allow_html=True)
