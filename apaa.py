@@ -1,4 +1,22 @@
 import streamlit as st
+import random
+
+# Fakta-fakta seru gabungan
+fakta_seru = [
+    "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
+    "🔬 TPC digunakan untuk mengukur keamanan pangan.",
+    "🦠 Beberapa bakteri bisa bertahan di lingkungan ekstrem.",
+    "💡 Pasteurisasi membantu menurunkan jumlah mikroba berbahaya.",
+    "🍽️ Mencuci tangan yang benar bisa mencegah penyebaran bakteri berbahaya.",
+    "📊 TPC adalah metode penting dalam pengujian kualitas makanan.",
+    "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
+    "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
+    "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
+    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
+]
+
+# Pilih satu fakta secara acak
+fakta_pilihan = random.choice(fakta_seru)
 
 with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
