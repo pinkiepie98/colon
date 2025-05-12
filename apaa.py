@@ -59,8 +59,6 @@ fakta_seru = [
 
 # Pilih satu fakta secara acak
 fakta_pilihan = random.choice(fakta_seru)
-</div>
-    """, unsafe_allow_html=True)
 
 # Halaman: Kalkulator Total Plate Count
 elif menu == "Kalkulator Total Plate Count":
