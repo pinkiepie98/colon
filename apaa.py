@@ -1,21 +1,6 @@
 import streamlit as st
 import random
 
-# Fakta-fakta seru
-fakta_seru = [
-    "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
-    "🔬 TPC digunakan untuk mengukur keamanan pangan.",
-    "🦠 Beberapa bakteri bisa bertahan di lingkungan ekstrem.",
-    "💡 Pasteurisasi membantu menurunkan jumlah mikroba berbahaya.",
-    "🍽️ Mencuci tangan yang benar bisa mencegah penyebaran bakteri berbahaya.",
-    "📊 TPC adalah metode penting dalam pengujian kualitas makanan.",
-    "🥛 Produk susu sering diuji menggunakan TPC sebelum dipasarkan.",
-    "🧼 Higienitas alat laboratorium sangat mempengaruhi hasil TPC.",
-    "🌡️ Suhu inkubasi yang ideal untuk TPC adalah 35-37°C.",
-    "🔎 Jumlah koloni ideal dihitung dari cawan dengan 30-300 koloni."
-]
-fakta_pilihan = random.choice(fakta_seru)
-
 # Menu
 with st.popover("Menu"):
     menu = st.radio("Pilih Halaman", ["Home", "Kalkulator Total Plate Count", "Tentang Kami"])
@@ -48,35 +33,47 @@ st.markdown("""
         font-size: 16px;
         font-family: 'Calibri', 'Segoe UI', sans-serif;
     }
+     .fakta-seru {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(255,255,255,0.9);
+        padding: 12px 18px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: 'Segoe UI', sans-serif;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        max-width: 300px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
+# Fakta Seru yang akan ditampilkan di halaman Home
+fakta_list = [
+    "🧫 Bakteri bisa bereproduksi dalam hitungan menit!",
+    "🔬 TPC digunakan untuk mengukur keamanan pangan.",
+    "🦠 Beberapa bakteri bisa bertahan di lingkungan ekstrem.",
+    "💡 Pasteurisasi membantu menurunkan jumlah mikroba berbahaya.",
+    "🍽️ Mencuci tangan yang benar bisa mencegah penyebaran bakteri berbahaya.",
+    "🧪 TPC sering digunakan dalam pengujian produk susu, air, dan makanan olahan.",
+    "🌡️ Suhu penyimpanan yang tepat dapat memperlambat pertumbuhan bakteri.",
+]
+    
 # Halaman: Home
 if menu == "Home":
     st.markdown('<div class="main">', unsafe_allow_html=True)
     st.markdown('<h1 class="title">🧫 Welcome To Calculator TPC 🦠</h1>', unsafe_allow_html=True)
     st.write("Website ini membantu menghitung **Total Plate Count (TPC)** atau jumlah koloni bakteri per mL sampel cair. Gunakan menu di atas untuk mulai.")
+    
+    # Tempatkan fakta seru bergulir otomatis di kiri bawah
+    placeholder = st.empty()
+    for i in range(100):  # akan loop cukup lama
+        current_fact = fakta_list[i % len(fakta_list)]
+        placeholder.markdown(f'<div class="fakta-seru">{current_fact}</div>', unsafe_allow_html=True)
+        time.sleep(4)
+
     st.markdown('</div>', unsafe_allow_html=True)
-
-    # Tampilkan fakta seru di pojok kanan bawah
-    st.markdown(f"""
-        <div style="
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            max-width: 300px;
-            font-family: 'Calibri', sans-serif;
-            font-size: 14px;
-            z-index: 9999;">
-            🧠 <strong>Fakta Seru:</strong><br>
-            {fakta_pilihan}
-        </div>
-    """, unsafe_allow_html=True)
-
+        
 # Halaman: Kalkulator Total Plate Count
 elif menu == "Kalkulator Total Plate Count":
     st.markdown('<div class="main">', unsafe_allow_html=True)
